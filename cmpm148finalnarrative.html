@@ -14,7 +14,9 @@
 
 <tw-storydata name="final" startnode="1" creator="Twine" creator-version="2.0.10" ifid="E1E4F8DA-FD69-4FE7-A28E-058A57D013B7" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -216,7 +218,7 @@ The two kids are exhausted, nearly falling over, and you don&#39;t see a settlem
 (set: $flair to &quot;How could I possibly ignore such a great haul? I&#39;m running low on water after all!&quot;)
 (goto: &quot;robkids&quot;)
 ]
-(else: $moral &gt;= 0)[
+(else:)[
 (set: $flair to &quot;Ignore such easy prey? Where&#39;s the fun in that? No, I have a better plan.&quot;)
 (goto: &quot;killkids&quot;)
 ]
@@ -236,7 +238,7 @@ The two kids are exhausted, nearly falling over, and you don&#39;t see a settlem
 (set: $flair to &quot;Precisely what I was thinking. That water looks mighty tasty right now!&quot;)
 (goto: &quot;robkids&quot;)
 ]
-(else: $moral &gt;= 0)[
+(else:)[
 (set: $flair to &quot;Rob them? And allow them to describe their attackers to any vigilantes they may have in their village? No, there can be no witnesses...&quot;)
 (goto: &quot;killkids&quot;)
 ]
@@ -256,7 +258,7 @@ The two kids are exhausted, nearly falling over, and you don&#39;t see a settlem
 (set: $flair to &quot;Don&#39;t you think killing is a little overboard? I could use the water, but I&#39;ll at least give them another chance!&quot;)
 (goto: &quot;robkids&quot;)
 ]
-(else: $moral &gt;= 0)[
+(else:)[
 (set: $flair to &quot;Spoken like a true outlaw. That water is mine, and I&#39;ll make sure no one comes after me. A damn shame that animals got to them on their way home...&quot;)
 (goto: &quot;killkids&quot;)
 ]
@@ -348,7 +350,7 @@ Kill the kids
 			(goto: &quot;helplawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 20)[
+		(else:)[
 			(set: $flair to &quot;intervene to kill&quot;)
 			(goto: &quot;killeveryonelawbringers&quot;)
 		]
@@ -371,7 +373,7 @@ Kill the kids
 			(goto: &quot;helplawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 20)[
+		(else:)[
 			(set: $flair to &quot;ignore to kill&quot;)
 			(goto: &quot;killeveryonelawbringers&quot;)
 		]
@@ -394,7 +396,7 @@ Kill the kids
 			(goto: &quot;helplawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 20)[
+		(else:)[
 			(set: $flair to &quot;helplawbringers to kill&quot;)
 			(goto: &quot;killeveryonelawbringers&quot;)
 		]
@@ -417,7 +419,7 @@ Kill the kids
 			(goto: &quot;helplawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;kill to kill&quot;)
 			(goto: &quot;killeveryonelawbringers&quot;)
 		]
@@ -439,7 +441,7 @@ Kill the kids
 			(goto: &quot;bribelawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;accept to kill&quot;)
 			(goto: &quot;killlawbringers&quot;)
 		]
@@ -457,7 +459,7 @@ Kill the kids
 			(goto: &quot;bribelawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;bribe to kill&quot;)
 			(goto: &quot;killlawbringers&quot;)
 		]
@@ -475,13 +477,13 @@ Kill the kids
 			(goto: &quot;bribelawbringers&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;kill to kill&quot;)
 			(goto: &quot;killlawbringers&quot;)
 		]
 	]
 ]</tw-passagedata>
-<tw-passagedata pid="11" name="Choice3" tags="" position="739,162">You see a large shape far off in the distance. As you get closer it becomes apperent that it&#39;s some sort of settlement. Not too large, couldn&#39;t be more than 30 people living there, at most.
+<tw-passagedata pid="11" name="Choice3" tags="" position="739,159">You see a large shape far off in the distance. As you get closer it becomes apparent that it&#39;s some sort of settlement. Not too large, couldn&#39;t be more than 30 people living there, at most.
 
 You pull up to the shambles that barely pass for a gate. Empty eyes stare at you from shadowed huts and dirty shacks. No one speaks, the air is full of tension.
 
@@ -493,11 +495,11 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 	]
 	
 	(elseif: $moral &gt; 20)[
-		(set: $flair to &quot;Ehh, talk to them? Could be bad. Better jsut keep my head down and move on.&quot;)
+		(set: $flair to &quot;Ehh, talk to them? Could be bad. Better just keep my head down and move on.&quot;)
 		(goto: &quot;ignoresettlement&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;Hahaha, good one. These &#39;people&#39; aren&#39;t worth the air I&#39;d expend to talk to them. They aren&#39;t even worth the air they breath. Only one thing for it.&quot;)
 		(goto: &quot;killsettlement&quot;)
 	]
@@ -506,7 +508,7 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 (link: &quot;Ignore the settlement, move on&quot;)[
 	(set: $moral to $moral + 0)
 	(if: $moral &gt; 50)[
-		(set: $flair to &quot;I don&#39;t know, they seem harless enough. I think I can risk talking to them.&quot;)
+		(set: $flair to &quot;I don&#39;t know, they seem harmless enough. I think I can risk talking to them.&quot;)
 		(goto: &quot;greetsettlement&quot;)
 	]
 	
@@ -515,7 +517,7 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 		(goto: &quot;ignoresettlement&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;I might have moved on, I might have, but that one kid. I don&#39;t like the way he looked at me. Hell, I don&#39;t like how any of them are looking at me.&quot;)
 		(goto: &quot;killsettlement&quot;)
 	]
@@ -533,7 +535,7 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 		(goto: &quot;ignoresettlement&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;I&#39;m honestly not sure why I had to think about it.&quot;)
 		(goto: &quot;killsettlement&quot;)
 	]
@@ -631,11 +633,11 @@ She tells you one of them went to the ravine and is missing. The&#39;ve been gon
 (link: &quot;Search for the missing man&quot;)[
 	(set: $moral to $moral + 10)
 	(if: $moral &gt; 60)[
-		(set: $flair to &quot;Oh course I will help them. No one is going to survive out here wiht out working together.&quot;)
+		(set: $flair to &quot;Of course I will help them. No one is going to survive out here without working together.&quot;)
 		(goto: &quot;searchsettlement&quot;)
 	]
-	(elseif: $moral &gt; 0)[
-		(set: $flair to &quot;I would... but it&#39;s really to risky. No point.&quot;)
+	(else:)[
+		(set: $flair to &quot;I would... but it&#39;s really too risky. No point.&quot;)
 		(goto: &quot;dontsearchsettlement&quot;)
 	]
 ]
@@ -646,7 +648,7 @@ She tells you one of them went to the ravine and is missing. The&#39;ve been gon
 		(set: $flair to &quot;I can&#39;t just ignore them. I&#39;ve come this far, looking for one man isn&#39;t going to hurt.&quot;)
 		(goto: &quot;searchsettlement&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;They can&#39;t really have expected me to help them. Wasn&#39;t much of a choice there.&quot;)
 		(goto: &quot;dontsearchsettlement&quot;)
 	]
@@ -677,7 +679,9 @@ You look around. No one left. Lots of bodies. Lots of blood. A deed fell done. C
 }</tw-passagedata>
 <tw-passagedata pid="22" name="searchsettlement" tags="" position="806,288">$flair
 
-You set out in the direction indicated. It isn&#39;t too long until you find the ravine. You walk along searching for the man. You hear a feble cry from up ahead. You quicken your pace and find a man trapped under a rock. &quot;Help me&quot; he begs. His pack is lying beside him, food and water can be seen inside.
+You set out in the direction indicated. It isn&#39;t too long until you find the ravine. You walk along searching for the man. You hear a feeble cry from up ahead. You quicken your pace and find a man trapped under a rock.
+
+&quot;Help me&quot; he begs. His pack is lying beside him, food and water can be seen inside.
 
 (link: &quot;Free the man and return to the settlement&quot;)[
 	(set: $moral to $moral + 10)
@@ -689,7 +693,7 @@ You set out in the direction indicated. It isn&#39;t too long until you find the
 		(set: $flair to &quot;I don&#39;t know, that rocks pretty big. I really don&#39;t think I can move it. Better just make the most of the situation and head on.&quot;)
 		(goto: &quot;ignoremansettlement&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;Oh, I&#39;ll free him alright. He won&#39;t have anything to worry about pretty soon.&quot;)
 		(goto: &quot;killmansettlement&quot;)
 	]
@@ -702,10 +706,10 @@ You set out in the direction indicated. It isn&#39;t too long until you find the
 		(goto: &quot;freemansettlement&quot;)
 	]
 	(elseif: $moral &gt; 30)[
-		(set: $flair to &quot;I wish it could be another way, but I&#39;ve got to be pratical, let&#39;s just take his thigns and move on.&quot;)
+		(set: $flair to &quot;I wish it could be another way, but I&#39;ve got to be pratical, let&#39;s just take his things and move on.&quot;)
 		(goto: &quot;ignoremansettlement&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;Ahh, might as well put him out of his misery. No point in leaving him to die in the heat.&quot;)
 		(goto: &quot;killmansettlement&quot;)
 	]
@@ -721,7 +725,7 @@ You set out in the direction indicated. It isn&#39;t too long until you find the
 		(set: $flair to &quot;Ehh, I mean, I know he&#39;s done for, I just don&#39;t think I could do it. Better just move along.&quot;)
 		(goto: &quot;ignoremansettlement&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;It&#39;s the least I can do. No reason to leave him to die. I could do a much better job myself.&quot;)
 		(goto: &quot;killmansettlement&quot;)
 	]
@@ -752,7 +756,7 @@ You roll the rock off the man. He struggles to stand, but seems unharmed. You tr
 }</tw-passagedata>
 <tw-passagedata pid="25" name="ignoremansettlement" tags="" position="879,415">$flair
 
-You pick up the pack and apologize to the man. His pleas echo in your ears as you move away, back into the wasteland, away from the settlement. His pack was well stocked, you eat better than you have for a while. If only you&#39;re next encounter could be so lucrative, you think.
+You pick up the pack and apologize to the man. His pleas echo in your ears as you move away, back into the wasteland, away from the settlement. His pack was well stocked, you eat better than you have for a while. If only your next encounter could be so lucrative, you think.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -798,7 +802,7 @@ The man puts up only a token of resistance and is soon dead. You take from his b
 		(goto: &quot;shootdriverdriving&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;stop to shootall&quot;)
 		(goto: &quot;shootalldriving&quot;)
 	]
@@ -826,7 +830,7 @@ The man puts up only a token of resistance and is soon dead. You take from his b
 		(goto: &quot;shootdriverdriving&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;accelerate to shootall&quot;)
 		(goto: &quot;shootalldriving&quot;)
 	]
@@ -854,7 +858,7 @@ The man puts up only a token of resistance and is soon dead. You take from his b
 		(goto: &quot;shootdriverdriving&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;sideswipe to shootall&quot;)
 		(goto: &quot;shootalldriving&quot;)
 	]
@@ -882,7 +886,7 @@ The man puts up only a token of resistance and is soon dead. You take from his b
 		(goto: &quot;shootdriverdriving&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;shootdriver to shootall&quot;)
 		(goto: &quot;shootalldriving&quot;)
 	]
@@ -910,7 +914,7 @@ The man puts up only a token of resistance and is soon dead. You take from his b
 		(goto: &quot;shootdriverdriving&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;shootall to shootall&quot;)
 		(goto: &quot;shootalldriving&quot;)
 	]
@@ -925,7 +929,7 @@ You pull over. The raiders demand your fuel.
 		(set: $flair to &quot;comply to comply&quot;)
 		(goto: &quot;complydriving&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;comply to killallpulledover&quot;)
 		(goto: &quot;killallpulledoverdriving&quot;)
 	]
@@ -937,7 +941,7 @@ You pull over. The raiders demand your fuel.
 		(set: $flair to &quot;killallpulledover to comply&quot;)
 		(goto: &quot;complydriving&quot;)
 	]
-	(elseif: $moral &gt; 0)[
+	(else:)[
 		(set: $flair to &quot;killallpulledover to killallpulledover&quot;)
 		(goto: &quot;killallpulledoverdriving&quot;)
 	]
@@ -959,21 +963,23 @@ You sideswipe their car. It blows up.
 (elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="31" name="Choice5" tags="" position="749,1152">You come across a well-established shanty town. Guards are posted outside the main gate.
+<tw-passagedata pid="31" name="Choice5" tags="" position="749,1152">You notice a wall in the distance. As you pull closer, you see that it is actually a very well organized and established town. A few fairly large buildings can be seen peeking over the tops of the wall.
+
+You pull up near the gate, far enough away to not be seen as an immediate threat. You notice guards at the main gate staring at you warily. They almost seem to recognize you.
 
 [[Approach The Gate-&gt;approachgatetown]]
 
 [[Ignore-&gt;ignoretown]]
 
-(link: &quot;Shoot guards from a distance&quot;)[
+(link: &quot;Shoot at guards from a distance&quot;)[
 	(set: $moral to $moral - 15)
 	(if: $moral &gt; 20)[
-		(set: $flair to &quot;shoot to ignore&quot;)
+		(set: $flair to &quot;Shooting at them seems a little rash. I don&#39;t need an entire town after me.&quot;)
 		(goto: &quot;ignoretown&quot;)
 	]
 	
-	(elseif: $moral &gt; 0)[
-		(set: $flair to &quot;shoot to shoot&quot;)
+	(else:)[
+		(set: $flair to &quot;Well I have always been opposed to authority.&quot;)
 		(goto: &quot;shootguardstown&quot;)
 	]
 ]</tw-passagedata>
@@ -1005,12 +1011,26 @@ You open fire on the car as it veers away, hitting everyone you can.
 
 You give them your spare fuel.
 
-[[Link-&gt;Choice5]]</tw-passagedata>
+{
+(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(else:)[Something went wrong. Pos is $pos]
+}</tw-passagedata>
 <tw-passagedata pid="35" name="killallpulledoverdriving" tags="" position="925,757">$flair
 
 You open fire now that their unawares are down.
 
-[[Link-&gt;Choice5]]</tw-passagedata>
+{
+(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(else:)[Something went wrong. Pos is $pos]
+}</tw-passagedata>
 <tw-passagedata pid="36" name="stopaftermathdriving" tags="" position="1177,878">$flair
 
 You stop the car. They rob you of your fuel.
@@ -1025,7 +1045,7 @@ You stop the car. They rob you of your fuel.
 }</tw-passagedata>
 <tw-passagedata pid="37" name="accelerateaftermathdriving" tags="" position="1360,757">(set: $rand to (either: 1, 2))
 
-(if: $rand == 1)[
+(if: $rand is 1)[
 	A raider jumps towards your car, but can&#39;t grab hold. He topples off the front of your car, which bounces up and down as you feel his body pass underneath. The rest of the raiders drive away.
 	
 {
@@ -1038,7 +1058,7 @@ You stop the car. They rob you of your fuel.
 }
 ]
 
-(elseif: $rand == 2)[
+(elseif: $rand is 2)[
 	A raider jumps towards your car and lands on the roof.
 	
 	(link: &quot;Stop the car&quot;)[
@@ -1053,7 +1073,7 @@ You stop the car. They rob you of your fuel.
 			(goto: &quot;shakeaftermathdriving&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;stopaftermath to shootaftermath&quot;)
 			(goto: &quot;shootaftermathdriving&quot;)
 		]
@@ -1071,7 +1091,7 @@ You stop the car. They rob you of your fuel.
 			(goto: &quot;shakeaftermathdriving&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;shakeaftermath to shootaftermath&quot;)
 			(goto: &quot;shootaftermathdriving&quot;)
 		]
@@ -1089,7 +1109,7 @@ You stop the car. They rob you of your fuel.
 			(goto: &quot;shakeaftermathdriving&quot;)
 		]
 		
-		(elseif: $moral &gt; 0)[
+		(else:)[
 			(set: $flair to &quot;shootaftermath to shootaftermath&quot;)
 			(goto: &quot;shootaftermathdriving&quot;)
 		]
@@ -1119,25 +1139,31 @@ You shoot him. He falls off your car and you drive off.
 (elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="40" name="approachgatetown" tags="" position="874,1152">You approach the gate.
+<tw-passagedata pid="40" name="approachgatetown" tags="" position="874,1152">You decide to approach the gate.
 
 (if: $moral &gt; 50)[
-	The guards allow you in. You talk to the leader of the town and he says he needs help protecting the town against a raider ambush.
+	The guards eye you up and down before allowing you entry into the city. The gates open slowly.
+	
+	&quot;Remember, no funny business. We&#39;ll be watching,&quot; the left guard warns.
+	
+	You make your way through the town and find yourself at the town hall. Noticing your weapons, a man approaches you.
+	
+	&quot;Excuse me, I can&#39;t help but notice that you seem to be quite the formidable traveler. I am the leader of this wonderful township, and... well, I can&#39;t beat around the bush. We&#39;re in need of your help. A group of raiders have been threatening us for several days now, and we fear that an ambush is on the horizon. We would be forever indebted to you if you could help sort our problem out. Our guards are trained to maintain order, not get into direct combat.&quot;
 	
 	(link: &quot;Agree to help&quot;)[
 		(set: $moral to $moral + 15)
-		(set: $flair to &quot;agree to agree since at least 75 moral minimum here&quot;)
+		(set: $flair to &quot;I could be this town&#39;s last hope. It&#39;s my duty to protect them.&quot;)
 		(goto: &quot;agreetohelptown&quot;)
 	]
 	
 	(link: &quot;Refuse and leave&quot;)[
 		(set: $moral to $moral + 0)
-		(if: $moral &gt; 80)[
-			(set: $flair to &quot;refuse to agree&quot;)
+		(if: $moral &gt; 60)[
+			(set: $flair to &quot;I can&#39;t just leave the town here like this. They&#39;ll fall without me. And that&#39;s a lot of blood I&#39;d rather not have on my hands.&quot;)
 			(goto: &quot;agreetohelptown&quot;)
 		]
 		(elseif: $moral &gt; 40)[
-			(set: $flair to &quot;refuse to refuse&quot;)
+			(set: $flair to &quot;I wish I could help. I really do. But that&#39;s a suicide mission. I need to maintain my own safety first and foremost.&quot;)
 			(goto: &quot;refusetohelptown&quot;)
 		]
 	]
@@ -1145,15 +1171,15 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Refuse and sabotage&quot;)[
 		(set: $moral to $moral - 20)
 		(if: $moral &gt; 80)[
-			(set: $flair to &quot;sabotage to agree&quot;)
+			(set: $flair to &quot;Sabotage!? Why would I want to do that? This township has been nothing but welcoming to me, a truly strange things these days! I should help them protect themselves.&quot;)
 			(goto: &quot;agreetohelptown&quot;)
 		]
 		(elseif: $moral &gt; 40)[
-			(set: $flair to &quot;sabotage to refuse&quot;)
+			(set: $flair to &quot;That seems a little overboard. This town has does nothing to harm me. I shouldn&#39;t do anything to harm them as well. But I&#39;m also not responsible for their wellbeing.&quot;)
 			(goto: &quot;refusetohelptown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;sabotage to sabotage&quot;)
+			(set: $flair to &quot;Ha! It&#39;s survival of the fittest out here. I suppose it&#39;s only fair to see who would win in an equal fight.&quot;)
 			(goto: &quot;sabotagetown&quot;)
 		]
 	]
@@ -1161,39 +1187,41 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Shoot leader and destroy town&quot;)[
 		(set: $moral to $moral - 40)
 		(if: $moral &gt; 80)[
-			(set: $flair to &quot;destroy to agree&quot;)
+			(set: $flair to &quot;God, why do I have these horrible thoughts!? I could never do something so heinous. Maybe doing a good deed will shake these terrible thoughts from my head.&quot;)
 			(goto: &quot;agreetohelptown&quot;)
 		]
 		(elseif: $moral &gt; 40)[
-			(set: $flair to &quot;destroy to refuse&quot;)
+			(set: $flair to &quot;God, why do I have these horrible thoughts!? I could never do something so heinous. I should get out of here, lest I actually act upon these terrible thoughts.&quot;)
 			(goto: &quot;refusetohelptown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;destroy to sabotage&quot;)
+			(set: $flair to &quot;Well, there are quite a few people in this town. I don&#39;t know if I could take them all on. But these weaklings don&#39;t deserve to thrive in such a manner. Maybe I&#39;ll let a stronger group take them on.&quot;)
 			(goto: &quot;sabotagetown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;destroy to destroy&quot;)
+		(else:)[
+			(set: $flair to &quot;This man is weak. This wonderful township deserves someone much more fit to lead. Or perhaps... Perhaps they don&#39;t deserve to live at all.&quot;)
 			(goto: &quot;destroytown&quot;)
 		]
 	]
 ]
 
 (elseif: $moral &gt; 30)[
-	The guards tell you to leave, readying their weapons.
+	The guard on the left recognizes you first. He raises his weapon and points it towards you. The guard on the right follows suit shortly after.
+	
+	&quot;Don&#39;t move any closer scum! We&#39;ve heard rumors of your actions! You are not getting into the fine township! For all we know, you&#39;re working for the raiders!&quot;
 	
 	(link: &quot;Leave peacefully&quot;)[
 		(set: $moral to $moral + 3)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;leavepeacefully to leavepeacefully&quot;)
+			(set: $flair to &quot;Woah, I didn&#39;t realize I was that well known. I don&#39;t want to cause any trouble here.&quot;)
 			(goto: &quot;leavepeacefullytown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;leavepeacefully to helpraiders&quot;)
+			(set: $flair to &quot;I&#39;m apparently not very welcome here. That&#39;s a shame. Perhaps I&#39;ll have to find another way in. He mentioned raiders?&quot;)
 			(goto: &quot;helpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;leavepeacefully to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;But they&#39;ve heard of me! I can&#39;t leave them so peacefully. My reputation is on the line!&quot;)
 			(goto: &quot;shootguardsneutraltown&quot;)
 		]
 	]
@@ -1201,15 +1229,15 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Leave and help raiders&quot;)[
 		(set: $moral to $moral - 10)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;helpraiders to leavepeacefully&quot;)
+			(set: $flair to &quot;I don&#39;t really want to get involved in this situation. If they want me gone, I&#39;m gone. Simple as that.&quot;)
 			(goto: &quot;leavepeacefullytown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;helpraiders to helpraiders&quot;)
+			(set: $flair to &quot;Probably a good plan. I bet they have all sorts of resources behind those walls. I just can&#39;t get in easily myself. I should find those raiders.&quot;)
 			(goto: &quot;helpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;helpraiders to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;Why would I allow a group of strangers to have all the fun? I can&#39;t take on the entire township, but I should have some enjoyment out of this.&quot;)
 			(goto: &quot;shootguardsneutraltown&quot;)
 		]
 	]
@@ -1217,35 +1245,39 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Shoot guards&quot;)[
 		(set: $moral to $moral - 20)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;shootguards to leavepeacefully&quot;)
+			(set: $flair to &quot;Shoot them? No. That&#39;s crazy. There&#39;s two of them. I&#39;ll just leave.&quot;)
 			(goto: &quot;leavepeacefullytown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;shootguards to helpraiders&quot;)
+			(set: $flair to &quot;No, two of them may be too much to handle. But I know some people who might be able to help me...&quot;)
 			(goto: &quot;helpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;shootguards to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;Exactly what I was thinking. I should maintain my infamy.&quot;)
 			(goto: &quot;shootguardsneutraltown&quot;)
 		]
 	]
 ]
 
-(elseif: $moral &gt; 0)[
-	The guards, upon seeing you, open fire.
+(else:)[
+	The guards, upon recognizing you, raise their rifles.
+	
+	&quot;It&#39;s one of the raiders! We need to protect the township!&quot;
+	
+	Before you can contest, the guards open fire. Bullets whiz by you as you roll out of the way and begin running.
 	
 	(link: &quot;Escape&quot;)[
 		(set: $moral to $moral + 3)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;escape to escape&quot;)
+			(set: $flair to &quot;Oh God, I know I&#39;ve done some bad things but this is ridiculous! I need to get out of here!&quot;)
 			(goto: &quot;escapetown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;escape to helpraiders&quot;)
+			(set: $flair to &quot;I can&#39;t just leave and give them a victory! I just need some reinforcements.&quot;)
 			(goto: &quot;helpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;escape to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;Leave? They shot at me! It&#39;s only natural that I follow suit!&quot;)
 			(goto: &quot;shootguardsbadtown&quot;)
 		]
 	]
@@ -1253,15 +1285,15 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Escape and help raiders&quot;)[
 		(set: $moral to $moral - 10)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;helpraiders to leavepeacefully&quot;)
+			(set: $flair to &quot;Help the raiders destroy this place? I may be seen as a bad guy, but even I wouldn&#39;t stoop that low!&quot;)
 			(goto: &quot;escapetown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;helpraiders to helpraiders&quot;)
+			(set: $flair to &quot;Yes, this is the best plan. If I want to exact my revenge for their atrocities, I need backup.&quot;)
 			(goto: &quot;helpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;helpraiders to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;Help the raiders? They&#39;re much too far away. I can settle this here and now.&quot;)
 			(goto: &quot;shootguardsbadtown&quot;)
 		]
 	]
@@ -1269,22 +1301,24 @@ You shoot him. He falls off your car and you drive off.
 	(link: &quot;Shoot back&quot;)[
 		(set: $moral to $moral - 5)
 		(if: $moral &gt; 30)[
-			(set: $flair to &quot;shootguards to escape&quot;)
+			(set: $flair to &quot;Why should I shoot them? This is all just a misunderstanding! I&#39;m not a raider, I shouldn&#39;t act like one!&quot;)
 			(goto: &quot;escapetown&quot;)
 		]
 		(elseif: $moral &gt; 20)[
-			(set: $flair to &quot;shootguards to helpraiders&quot;)
-			(goto: &quot;helpraiderstown&quot;)
+			(set: $flair to &quot;They have me outnumbered. It would be dumb to stop and return fire. I think I know some people who could help me though.&quot;)
+			(goto: &quot;escapehelpraiderstown&quot;)
 		]
-		(elseif: $moral &gt; 0)[
-			(set: $flair to &quot;shootguards to shootguards&quot;)
+		(else:)[
+			(set: $flair to &quot;An eye for and eye, a common lifestyle these days.&quot;)
 			(goto: &quot;shootguardsbadtown&quot;)
 		]
 	]
 ]</tw-passagedata>
 <tw-passagedata pid="41" name="ignoretown" tags="" position="999,1152">$flair
 
-You ignore the town.
+You ignore the town. It looks well off. They probably have an established leadership to help them prosper. And you see guards in front of the gate.
+
+They have no need of your assistance, and you shouldn&#39;t scare them. Strangers aren&#39;t taken too kindly these days.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1296,7 +1330,11 @@ You ignore the town.
 }</tw-passagedata>
 <tw-passagedata pid="42" name="shootguardstown" tags="" position="1124,1151">$flair
 
-You shoot at the guards
+You notice the guards eyeing you warily from the gate several hundred feet away.
+
+&quot;Hmph... they recognize me. Well nothing like a little warning message not to mess with me.&quot;
+
+You climb into your car and raise your rifle. Several rounds are fired off in quick succession. The guards scurry around, attempting to dodge bullets that aren&#39;t even intended to hit them. You chuckle slightly before driving off.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1320,14 +1358,30 @@ You shoot at the guards
 	You leave the missile alone. Not your problem.
 ]
 
-(elseif: $moral &gt; 0)[
+(else:)[
 	You launch the missile prematurely and enjoy the fireworks.
 ]
 
 [[Play Again?-&gt;Start]]</tw-passagedata>
 <tw-passagedata pid="44" name="agreetohelptown" tags="" position="673,1277">$flair
 
-You help the town
+You offer your services to the leader of this township, swearing you will do everything in your power to protect them.
+
+Just an hour later, you find yourself on a bluff overlooking the raider camp.
+
+&quot;There aren&#39;t as many as I was expecting,&quot; you think, relieved. This shouldn&#39;t be too much of a problem for you.
+
+Using a rock as a mount, you hang your rifle over the edge, and begin to take aim.
+
+The first raider falls easily. Once they begin scattering, it gets harder, but you make use of the occasional pauses to decrease their numbers.
+
+Eventually, the remaining raiders notice you and begin firing back, but there are only three or four remaining. You consider that a job well done and head back to the township.
+
+Upon telling the leader, he gives an excited gasp.
+
+&quot;You did wonderful work! Our guards will be able to handle a small number of raiders. Please, take some fuel and water!&quot;
+
+The guards thank you as you leave, and, just to be certain, you give them the exact location of the raider camp so they can be prepared.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1339,7 +1393,11 @@ You help the town
 }</tw-passagedata>
 <tw-passagedata pid="45" name="refusetohelptown" tags="" position="798,1278">$flair
 
-You refuse to help the town.
+You apologize to the leader as you refuse to help him.
+
+He looks down, beaten. &quot;No, I understand. It is a dangerous mission. I will attempt to train our guards better, so we can be prepared, but I do not want the life of a well-meaning stranger on my hand. That would have no purpose.&quot;
+
+You leave the township behind, a trail of dust following your car.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1351,7 +1409,13 @@ You refuse to help the town.
 }</tw-passagedata>
 <tw-passagedata pid="46" name="sabotagetown" tags="" position="923,1277">$flair
 
-You sabotage the gates to the town, weakening them.
+You apologize to the leader as you refuse to help him.
+
+He looks down, beaten. &quot;No, I understand. It is a dangerous mission. I will attempt to train our guards better, so we can be prepared, but I do not want the life of a well-meaning stranger on my hand. That would have no purpose.&quot;
+
+As you leave, you see the gate mechanism unmanned. You take your opportunity and break the mechanism, leaving the gate slightly ajar.
+
+You leave the gate as nonchalantly as you can, and peel out accelerating away from the township.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1363,7 +1427,15 @@ You sabotage the gates to the town, weakening them.
 }</tw-passagedata>
 <tw-passagedata pid="47" name="destroytown" tags="" position="1048,1277">$flair
 
-You take matters into your own hands and destroy the town yourself.
+The leader looks sullen as you do not immediately give him good news. It&#39;s a shame you can&#39;t even give him bad news to at least give him confirmation.
+
+You subtely reach for your gun, and before he even notices, he&#39;s on the floor bleeding.
+
+The guards are alerted and you begin running. Shots bounce off the walls near you. You return fire when possible and even hit a few attackers.
+
+As you approach the gates, the two guards who greeted you stand in your path. Still running, you raise your gun and fire off several shots. One guard gets hit in the leg and falls, and the other ducks behind the wall to avoid the onslaught.
+
+You blast through the gates and jump into your car, before driving away from the settlement.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1375,7 +1447,7 @@ You take matters into your own hands and destroy the town yourself.
 }</tw-passagedata>
 <tw-passagedata pid="48" name="leavepeacefullytown" tags="" position="740,1403">$flair
 
-You leave the town peacefully.
+You raise your hands, showing your disinterest in fighting and begin slowly backing up. The guards relax slightly more and you reach your car, but their guns are aimed at you until they are out of sight.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1385,9 +1457,19 @@ You leave the town peacefully.
 (elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="49" name="helpraiderstown" tags="" position="865,1403">$flair
+<tw-passagedata pid="49" name="helpraiderstown" tags="" position="865.0001,1403">$flair
 
-You leave the town but find the raiders and join them.
+You raise your hands and start backing away, the guards aimed at you the entire time. Once in your car, you drive off with a destination in mind. After some searching, you spot the raider camp.
+
+You raise a white shirt out of the window to signify peace as you drive in. The raiders, much like the guards, all have weapons pointed at you, but as soon as you mention the information you have on the township, the leader approaches you.
+
+After careful planning, the raiders commence their attack, taking you along as well, though they emphasize that it is for today only.
+
+The town is easy to overrun due to sheer numbers. Once everyone reached the town hall and had the leader cornered, the head of the raiders turns towards you.
+
+&quot;Take what you need, and not a bit more. Leave, and don&#39;t turn back. We won&#39;t hesitate to shoot you should you return.&quot;
+
+You take this as your cue to leave, stock up on fuel and water, and get back to your car. You drive by the township as you leave, and notice the raiders moving crates of supplies back to their own vehicles as you look back.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1399,7 +1481,7 @@ You leave the town but find the raiders and join them.
 }</tw-passagedata>
 <tw-passagedata pid="50" name="shootguardsneutraltown" tags="" position="990,1404">$flair
 
-You decide to open fire on the guards
+In the blink of an eye, you have your rifle out. Shots are fired, and the two guards are barely able to return fire. Their accuracy is off due to the surprise you hit them with, as well as the bullets. They drop to the ground and you hustle away to your car, driving off into the desert once more.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1411,7 +1493,7 @@ You decide to open fire on the guards
 }</tw-passagedata>
 <tw-passagedata pid="51" name="escapetown" tags="" position="808,1528">$flair
 
-You escape the fire from the guards.
+You duck and run in erratic patterns, everything you learned in order to stay alive in these situations. It feels like an eternity before you get back to your car, but you do manage to make it. Slamming the door and ducking away from the windows, you slam on the accelerator as the bullets ring off the metal frame.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1421,9 +1503,11 @@ You escape the fire from the guards.
 (elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="52" name="shootguardsbadtown" tags="" position="933,1529">$flair
+<tw-passagedata pid="52" name="shootguardsbadtown" tags="" position="1063.0001,1529">$flair
 
-You return fire upon the guards before making your exit.
+You run around erratically before diving around a medium sized boulder about a hundred feet from the gates. Raising your rifle above the lip of the rock, you blindly return fire, listening to see if your aim is true.
+
+The firing stops as you hear a scream, knowing you must have hit one of them. Using this to your advantage, you take aim at the other one, and fire before running back to your car, leaving the town behind you to sort out the two guards.
 
 {
 (if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
@@ -1436,6 +1520,30 @@ You return fire upon the guards before making your exit.
 <tw-passagedata pid="53" name="aridterrain" tags="" position="135,22">The sand stretches for miles in every direction, always ending in that familiar blurry haze.
 
 (link: &quot;return&quot;)[(goto: &quot;Choice1&quot;)]</tw-passagedata>
+<tw-passagedata pid="54" name="escapehelpraiderstown" tags="" position="938.0001,1529">$flair
+
+You duck and run in erratic patterns, everything you learned in order to stay alive in these situations. It feels like an eternity before you get back to your car, but you do manage to make it. Slamming the door and ducking away from the windows, you slam on the accelerator as the bullets ring off the metal frame.
+
+After some searching, you spot the raider camp.
+
+You raise a white shirt out of the window to signify peace as you drive in. The raiders, much like the guards, all have weapons pointed at you, but as soon as you mention the information you have on the township, the leader approaches you.
+
+After careful planning, the raiders commence their attack, taking you along as well, though they emphasize that it is for today only.
+
+The town is easy to overrun due to sheer numbers. Once everyone reached the town hall and had the leader cornered, the head of the raiders turns towards you.
+
+&quot;Take what you need, and not a bit more. Leave, and don&#39;t turn back. We won&#39;t hesitate to shoot you should you return.&quot;
+
+You take this as your cue to leave, stock up on fuel and water, and get back to your car. You drive by the township as you leave, and notice the raiders moving crates of supplies back to their own vehicles as you look back.
+
+{
+(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(else:)[Something went wrong. Pos is $pos]
+}</tw-passagedata>
 </tw-storydata>
 
 
