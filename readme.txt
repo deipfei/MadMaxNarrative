@@ -1,5 +1,12 @@
 As of yet Untitled Mad Max Story
 
+Changelog - 12/6/15 - Dustin
+	Laughed at some of my dumb mistakes that Kevin pointed out
+	Moved Play Again from Choice 6 to new choices added by Quin
+	Played through twice to search for typos
+		Found a few and fixed them, but not a thorough search
+	Fixed broken link trying to go to "stopcaraftermathdriving" rather than "stopaftermathdriving"
+
 Changelog - 12/5/15 - Kevin
 	Removed ariddesert descriptor passage for consistency. Might add a couple of those later (tomorrow)
 	Added all text for Choice 2
