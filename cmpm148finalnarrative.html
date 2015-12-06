@@ -1080,7 +1080,7 @@ Laughing to themselves, the raiders drive off. You get back in your car, that mu
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/choice24
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="37" name="accelerateaftermathdriving" tags="" position="1357.0001,757">(set: $rand to (either: 1, 2))
+<tw-passagedata pid="37" name="accelerateaftermathdriving" tags="" position="1353.0001,757">(set: $rand to (either: 1, 2))
 
 (if: $rand is 1)[
 	A raider jumps towards your car, but can&#39;t manage to grab hold of the frame. He topples off the front of your car, which bounces up and down as his body passes underneath. The rest of the raiders drive away, heads hung in shame at this astounding display of ineptitude.
@@ -1115,7 +1115,7 @@ Laughing to themselves, the raiders drive off. You get back in your car, that mu
 		(set: $moral to $moral - 5)
 		(if: $moral &gt; 46)[
 			(set: $flair to &quot;If I don&#39;t manage to shake him off I&#39;ll die. I can&#39;t take the risk. I&#39;ll pull over.&quot;)
-			(goto: &quot;stopcaraftermathdriving&quot;)
+			(goto: &quot;stopaftermathdriving&quot;)
 		]
 		
 		(elseif: $moral &gt; 43)[
