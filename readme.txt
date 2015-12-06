@@ -6,6 +6,8 @@ Changelog - 12/6/15 - Dustin
 	Played through twice to search for typos
 		Found a few and fixed them, but not a thorough search
 	Fixed broken link trying to go to "stopcaraftermathdriving" rather than "stopaftermathdriving"
+    Fixed leftovers from manual merge
+    Fixed flair in ignoretown
 
 Changelog - 12/6/15 - Kevin
 	Fixed a few typos
