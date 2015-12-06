@@ -7,6 +7,12 @@ Changelog - 12/6/15 - Dustin
 		Found a few and fixed them, but not a thorough search
 	Fixed broken link trying to go to "stopcaraftermathdriving" rather than "stopaftermathdriving"
 
+Changelog - 12/6/15 - Kevin
+	Fixed a few typos
+	Made the choice links consistent in capitalization, length, & punctuation
+	Moved the [[Play again?]] links to the choice6 aftermaths
+	Re-deleted ariddesert passage
+
 Changelog - 12/5/15 - Kevin
 	Removed ariddesert descriptor passage for consistency. Might add a couple of those later (tomorrow)
 	Added all text for Choice 2
