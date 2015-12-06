@@ -15,7 +15,9 @@
 <tw-storydata name="final" startnode="1" creator="Twine" creator-version="2.0.10" ifid="E1E4F8DA-FD69-4FE7-A28E-058A57D013B7" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -265,68 +267,94 @@ The two kids are exhausted, nearly falling over, and you don&#39;t see a settlem
 ]</tw-passagedata>
 <tw-passagedata pid="4" name="givekidsride" tags="" position="131,156">$flair
 
-Give the kids a ride
+You accept the kids&#39; request, and they climb into the back of your car. They direct you which way to drive, but are otherwise too exhausted to maintain a conversation.
 
 (set: $rand to (random: 0, 1))
 
-(link: &quot;You give the kids a ride&quot;)[
+(link: &quot;Begin driving&quot;)[
     (if: $rand is 0)[ (goto: &quot;kidsvillage&quot;)]
 	(elseif: $rand is 1)[(goto: &quot;raidervillage&quot;)]
 ]</tw-passagedata>
 <tw-passagedata pid="5" name="ignorekids" tags="" position="256,160">$flair
 
-Ignore the kids
+The kids look at you hopefully, but you just can&#39;t justify taking them with you. This is a strange world you live in, and people do crazy things for resources. It&#39;s safest in trusted groups, but if you can&#39;t have trust you&#39;re better off alone.
+
+You apologize to the children, and drive away before they can argue. Through the dust you see them continue walking once more.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="6" name="robkids" tags="" position="381,158">$flair
 
-Rob the kids
+You look to the kids, and ask which way it is to their village. They excitedly point you in the direction.
+
+You check the horizon and see nothing for as long as the eye can see. Turning back to the children, you pull out your rifle and aim it at them.
+
+The kids cower away, and you demand their water.
+
+Begging not to hurt them, they pass you the jugs, which you place in your passenger seat before driving off.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="7" name="killkids" tags="" position="506,161">$flair
 
-Kill the kids
+You look to the kids, and ask which way it is to their village. They excitedly point you in the direction.
+
+You check the horizon and see nothing for as long as the eye can see. Turning back to the children, you pull out your rifle and aim it at them.
+
+You chuckle as they beg for their lives, and promise to make it quick. Two shots fire off in quick succession.
+
+You step out of the vehicle, take the water with you, and drive off.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="8" name="kidsvillage" tags="" position="70,281">Kids&#39; village
+<tw-passagedata pid="8" name="kidsvillage" tags="" position="70,281">After fifteen minutes of travel, which would be a very long walk for the girl and boy, you see the village approaching from the horizon.
+
+As your car pulls towards the interest, the villagers approach, curious about the noise your car is making. They seem hesitant, eyeing you curiously.
+
+Once the kids step out, however, the villagers run over to pull them into embraces. After a heartwarming return, the villagers offer you some of their scarce supplies.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="9" name="raidervillage" tags="" position="195,285">Raiders&#39; village
+<tw-passagedata pid="9" name="raidervillage" tags="" position="195,285">After fifteen minutes of travel, which would be a very long walk for the girl and boy, you see the village approaching from the horizon.
+
+As you pull up, you see people coming out to explore the racket that your car is making. They eye you strangely until they see the children step out of the car.
+
+The children are ushered over towards the back of the group of people, and, as they disappear behind the crowd, rifles are drawn and fired upon you.
+
+&quot;Those blasted kids tricked me!&quot; you think as you duck down and turn your car around to drive away.
+
+You&#39;re not injured due to your quick thinking, yet you can&#39;t help but hate yourself for such a foolish mistake.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="10" name="Choice2" tags="" position="10,528">You find a group of lawbringers.
@@ -490,7 +518,7 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 (link: &quot;Greet the members of the settlement&quot;)[
 	(set: $moral to $moral + 3)
 	(if: $moral &gt; 50)[
-		(set: $flair to &quot;I&#39;m sure we can help eachother, let&#39;s see what they have to say.&quot;)
+		(set: $flair to &quot;I&#39;m sure we can help each other, let&#39;s see what they have to say.&quot;)
 		(goto: &quot;greetsettlement&quot;)
 	]
 	
@@ -545,11 +573,11 @@ You pull up to the shambles that barely pass for a gate. Empty eyes stare at you
 Intervene to save man
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="13" name="ignorelawbringers" tags="" position="260,525">$flair
@@ -557,11 +585,11 @@ Intervene to save man
 ignore the lawbringers detaining the man
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="14" name="helplawbringers" tags="" position="385,525">$flair
@@ -569,11 +597,11 @@ ignore the lawbringers detaining the man
 Help lawbringers with bogus charges
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="15" name="killeveryonelawbringers" tags="" position="510,525">$flair
@@ -581,11 +609,11 @@ Help lawbringers with bogus charges
 You kill everyone
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="16" name="acceptlawbringers" tags="" position="135,651">$flair
@@ -593,11 +621,11 @@ You kill everyone
 You accept the charges
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="17" name="bribelawbringers" tags="" position="260,651">$flair
@@ -605,11 +633,11 @@ You accept the charges
 You bribe the lawbringers
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="18" name="killlawbringers" tags="" position="385,650">$flair
@@ -617,18 +645,18 @@ You bribe the lawbringers
 You kill the lawbringers
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="19" name="greetsettlement" tags="" position="864,163">$flair
 
 You call out a hello. You can see them relax in response. A man steps fowards and extends his hand. You shake it, his hand is cracked and dry. A women steps foward and asks you for aid.
 
-She tells you one of them went to the ravine and is missing. The&#39;ve been gone almost a week she says. She points of in the distance, her eyes implore you. &quot;Find him.&quot; she says, her voice little more than a whisper.
+She tells you one of them went to the ravine and is missing. They&#39;ve been gone almost a week she says. She points of in the distance, her eyes implore you. &quot;Find him.&quot; she says, her voice little more than a whisper.
 
 (link: &quot;Search for the missing man&quot;)[
 	(set: $moral to $moral + 10)
@@ -658,11 +686,11 @@ She tells you one of them went to the ravine and is missing. The&#39;ve been gon
 Better not risk it you think. Who knows what these people might be hiding, what they might do. You turn around and keep going. Better safe than sorry, no use getting involved.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="21" name="killsettlement" tags="" position="1114,165">$flair
@@ -670,11 +698,11 @@ Better not risk it you think. Who knows what these people might be hiding, what 
 You look around. No one left. Lots of bodies. Lots of blood. A deed fell done. Clean kills every one. Not too much blood on your clothes either. You start to search the settlement and the bodies. Not much on the kids, little more than rags. A few of the men have tools and water, enough to make it worth the trouble. You find the storehouse. A decent amout of food here. Too much to take with you. You stay a while and eat it. Then again, the smell of the bodies might be to much to handle. You load up as much food and you can. You leave the settlement, just as quite as you found. The only sound is that of the vultures.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="22" name="searchsettlement" tags="" position="806,288">$flair
@@ -735,11 +763,11 @@ You set out in the direction indicated. It isn&#39;t too long until you find the
 You refuse the women. Nothing to be done for it, no reason to waste time. The man is sure to be dead by now, no reason to waste time. You head back into the wasteland, the pleas of the women mix with the wind and the sand as you press onward.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="24" name="freemansettlement" tags="" position="753,413">$flair
@@ -747,11 +775,11 @@ You refuse the women. Nothing to be done for it, no reason to waste time. The ma
 You roll the rock off the man. He struggles to stand, but seems unharmed. You travel back to the village, upon you&#39;re arrival  you are greeted warmly. They give you a little food and water, but hardly enough to justify you&#39;re rescue mission. The day grows dark, time to be moving on.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="25" name="ignoremansettlement" tags="" position="879,415">$flair
@@ -759,11 +787,11 @@ You roll the rock off the man. He struggles to stand, but seems unharmed. You tr
 You pick up the pack and apologize to the man. His pleas echo in your ears as you move away, back into the wasteland, away from the settlement. His pack was well stocked, you eat better than you have for a while. If only your next encounter could be so lucrative, you think.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="26" name="killmansettlement" tags="" position="1004,415">$flair
@@ -771,11 +799,11 @@ You pick up the pack and apologize to the man. His pleas echo in your ears as yo
 The man puts up only a token of resistance and is soon dead. You take from his body what you can and look through his pack. Most of the food has been eaten and little water remains, but it&#39;s better than nothing. You toss the body into the ravine, his friends will think he fell. Hell, you tell yourself, he just as easily could have. Dead both ways, better his food not go to waste.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="27" name="Choice4" tags="" position="741,631">While driving, a large car with raiders atop pulls of next to you. The raider hanging off the side tells you to stop your car.
@@ -956,11 +984,11 @@ You gun the throttle. The raiders follow suit.
 You sideswipe their car. It blows up.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="31" name="Choice5" tags="" position="749,1152">You notice a wall in the distance. As you pull closer, you see that it is actually a very well organized and established town. A few fairly large buildings can be seen peeking over the tops of the wall.
@@ -988,11 +1016,11 @@ You pull up near the gate, far enough away to not be seen as an immediate threat
 You take aim and fire a bullet into the driver&#39;s head. The car veers away.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="33" name="shootalldriver" tags="" position="1241,631">$flair
@@ -1000,11 +1028,11 @@ You take aim and fire a bullet into the driver&#39;s head. The car veers away.
 You open fire on the car as it veers away, hitting everyone you can.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="34" name="complydriving" tags="" position="800,756">$flair
@@ -1012,11 +1040,11 @@ You open fire on the car as it veers away, hitting everyone you can.
 You give them your spare fuel.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="35" name="killallpulledoverdriving" tags="" position="925,757">$flair
@@ -1024,11 +1052,11 @@ You give them your spare fuel.
 You open fire now that their unawares are down.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="36" name="stopaftermathdriving" tags="" position="1177,878">$flair
@@ -1036,11 +1064,11 @@ You open fire now that their unawares are down.
 You stop the car. They rob you of your fuel.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="37" name="accelerateaftermathdriving" tags="" position="1360,757">(set: $rand to (either: 1, 2))
@@ -1049,11 +1077,11 @@ You stop the car. They rob you of your fuel.
 	A raider jumps towards your car, but can&#39;t grab hold. He topples off the front of your car, which bounces up and down as you feel his body pass underneath. The rest of the raiders drive away.
 	
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }
 ]
@@ -1120,11 +1148,11 @@ You stop the car. They rob you of your fuel.
 You shake him off the hood of your car and drive off.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="39" name="shootaftermathdriving" tags="" position="1427,882">$flair
@@ -1132,11 +1160,11 @@ You shake him off the hood of your car and drive off.
 You shoot him. He falls off your car and you drive off.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="40" name="approachgatetown" tags="" position="874,1152">You decide to approach the gate.
@@ -1321,11 +1349,11 @@ You ignore the town. It looks well off. They probably have an established leader
 They have no need of your assistance, and you shouldn&#39;t scare them. Strangers aren&#39;t taken too kindly these days.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="42" name="shootguardstown" tags="" position="1124,1151">$flair
@@ -1337,11 +1365,11 @@ You notice the guards eyeing you warily from the gate several hundred feet away.
 You climb into your car and raise your rifle. Several rounds are fired off in quick succession. The guards scurry around, attempting to dodge bullets that aren&#39;t even intended to hit them. You chuckle slightly before driving off.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="43" name="Choice6" tags="" position="746,1763">You find a missile silo.
@@ -1384,11 +1412,11 @@ Upon telling the leader, he gives an excited gasp.
 The guards thank you as you leave, and, just to be certain, you give them the exact location of the raider camp so they can be prepared.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="45" name="refusetohelptown" tags="" position="798,1278">$flair
@@ -1400,11 +1428,11 @@ He looks down, beaten. &quot;No, I understand. It is a dangerous mission. I will
 You leave the township behind, a trail of dust following your car.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="46" name="sabotagetown" tags="" position="923,1277">$flair
@@ -1418,11 +1446,11 @@ As you leave, you see the gate mechanism unmanned. You take your opportunity and
 You leave the gate as nonchalantly as you can, and peel out accelerating away from the township.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="47" name="destroytown" tags="" position="1048,1277">$flair
@@ -1438,11 +1466,11 @@ As you approach the gates, the two guards who greeted you stand in your path. St
 You blast through the gates and jump into your car, before driving away from the settlement.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="48" name="leavepeacefullytown" tags="" position="740,1403">$flair
@@ -1450,14 +1478,14 @@ You blast through the gates and jump into your car, before driving away from the
 You raise your hands, showing your disinterest in fighting and begin slowly backing up. The guards relax slightly more and you reach your car, but their guns are aimed at you until they are out of sight.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="49" name="helpraiderstown" tags="" position="865.0001,1403">$flair
+<tw-passagedata pid="49" name="helpraiderstown" tags="" position="865,1403">$flair
 
 You raise your hands and start backing away, the guards aimed at you the entire time. Once in your car, you drive off with a destination in mind. After some searching, you spot the raider camp.
 
@@ -1472,11 +1500,11 @@ The town is easy to overrun due to sheer numbers. Once everyone reached the town
 You take this as your cue to leave, stock up on fuel and water, and get back to your car. You drive by the township as you leave, and notice the raiders moving crates of supplies back to their own vehicles as you look back.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="50" name="shootguardsneutraltown" tags="" position="990,1404">$flair
@@ -1484,11 +1512,11 @@ You take this as your cue to leave, stock up on fuel and water, and get back to 
 In the blink of an eye, you have your rifle out. Shots are fired, and the two guards are barely able to return fire. Their accuracy is off due to the surprise you hit them with, as well as the bullets. They drop to the ground and you hustle away to your car, driving off into the desert once more.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="51" name="escapetown" tags="" position="808,1528">$flair
@@ -1496,31 +1524,31 @@ In the blink of an eye, you have your rifle out. Shots are fired, and the two gu
 You duck and run in erratic patterns, everything you learned in order to stay alive in these situations. It feels like an eternity before you get back to your car, but you do manage to make it. Slamming the door and ducking away from the windows, you slam on the accelerator as the bullets ring off the metal frame.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="52" name="shootguardsbadtown" tags="" position="1063.0001,1529">$flair
+<tw-passagedata pid="52" name="shootguardsbadtown" tags="" position="1063,1529">$flair
 
 You run around erratically before diving around a medium sized boulder about a hundred feet from the gates. Raising your rifle above the lip of the rock, you blindly return fire, listening to see if your aim is true.
 
 The firing stops as you hear a scream, knowing you must have hit one of them. Using this to your advantage, you take aim at the other one, and fire before running back to your car, leaving the town behind you to sort out the two guards.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 <tw-passagedata pid="53" name="aridterrain" tags="" position="135,22">The sand stretches for miles in every direction, always ending in that familiar blurry haze.
 
 (link: &quot;return&quot;)[(goto: &quot;Choice1&quot;)]</tw-passagedata>
-<tw-passagedata pid="54" name="escapehelpraiderstown" tags="" position="938.0001,1529">$flair
+<tw-passagedata pid="54" name="escapehelpraiderstown" tags="" position="938,1529">$flair
 
 You duck and run in erratic patterns, everything you learned in order to stay alive in these situations. It feels like an eternity before you get back to your car, but you do manage to make it. Slamming the door and ducking away from the windows, you slam on the accelerator as the bullets ring off the metal frame.
 
@@ -1537,11 +1565,11 @@ The town is easy to overrun due to sheer numbers. Once everyone reached the town
 You take this as your cue to leave, stock up on fuel and water, and get back to your car. You drive by the township as you leave, and notice the raiders moving crates of supplies back to their own vehicles as you look back.
 
 {
-(if: $pos is 2)[(link: &quot;Link2&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
-(elseif: $pos is 3)[(link: &quot;Link3&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
-(elseif: $pos is 4)[(link: &quot;Link4&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
-(elseif: $pos is 5)[(link: &quot;Link5&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
-(elseif: $pos is 6)[(link: &quot;Link6&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
+(if: $pos is 2)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 2nd)]]
+(elseif: $pos is 3)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 3rd)]]
+(elseif: $pos is 4)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 4th)]]
+(elseif: $pos is 5)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: $order&#39;s 5th)]]
+(elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
 </tw-storydata>
