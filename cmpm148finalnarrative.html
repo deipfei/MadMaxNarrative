@@ -1383,59 +1383,59 @@ You climb into your car and raise your rifle. Several rounds are fired off in qu
 (elseif: $pos is 6)[(link: &quot;Continue on&quot;)[(set: $pos to $pos + 1)(goto: &quot;Choice6&quot;)]]
 (else:)[Something went wrong. Pos is $pos]
 }</tw-passagedata>
-<tw-passagedata pid="43" name="Choice6" tags="" position="636,1734">After a long journey you arrive at a what appears to be a missle silo. The metal doors are closed, for now. You see a passageway leading down into the groud, presumably to the control room. You head down the passage, it&#39;s long and dark and feels like nothing&#39;s been down this way in a long time. Finally after having decnded several flights of stairs you arrive in the control room. The light from the console illuminates the room with a dull blue light. The countdown is front and center, it reads just over two hours. A set of coordinates are visible below it. A quick look at the map on the wall shows it&#39;s target is the most populated settlement for miles.
+<tw-passagedata pid="43" name="Choice6" tags="" position="636,1734">After a long journey you arrive at a what appears to be a missile silo. The metal doors are closed, for now. You see a passageway leading down into the groud, presumably to the control room. You head down the passage, it&#39;s long and dark and feels like nothing&#39;s been down this way in a long time. Finally after having decended several flights of stairs you arrive in the control room. The light from the console illuminates the room with a dull blue light. The countdown is front and center, it reads just over two hours. A set of coordinates are visible below it. A quick look at the map on the wall shows it&#39;s target is the most populated settlement for miles.
 
-(link: &quot;Try to disable the missle&quot;)[
+(link: &quot;Try to disable the missile&quot;)[
 	(set: $moral to $moral + 10)
 	(if: $moral &gt; 70)[
 		(set: $flair to &quot;This missle can&#39;t be to hard to disable.&quot;)
-		(goto: &quot;disablemissle&quot;)
+		(goto: &quot;disablemissile&quot;)
 	]
 
 	(elseif: $moral &gt; 30)[
-		(set: $flair to &quot;Unfortunatly, I know nothing of missle silos. If I leave now, I might be able to get there in time to warn them.&quot;)
-		(goto: &quot;leavemissle&quot;)
+		(set: $flair to &quot;Unfortunately, I know nothing of missile silos. If I leave now, I might be able to get there in time to warn them.&quot;)
+		(goto: &quot;leavemissile&quot;)
 	]
 
 	(else:)[
-		(set: $flair to &quot;What? If I disabled the missle, all those peopole would survive. Can&#39;t have that.&quot;)
-		(goto: &quot;launchmissle&quot;)
+		(set: $flair to &quot;What? If I disabled the missile, all those peopole would survive. Can&#39;t have that.&quot;)
+		(goto: &quot;launchmissile&quot;)
 	]
 ]
 
 (link: &quot;Try to get to the settlement in time to warn it&quot;)[
 	(set: $moral to $moral + 0)
 	(if: $moral &gt; 70)[
-		(set: $flair to &quot;I don&#39;t think i could get there in time, though I think i could disable the missle.&quot;)
-		(goto: &quot;disablemissle&quot;)
+		(set: $flair to &quot;I don&#39;t think i could get there in time, though I think I could disable the missile.&quot;)
+		(goto: &quot;disablemissile&quot;)
 	]
 
 	(elseif: $moral &gt; 30)[
 		(set: $flair to &quot;I better hurry, I think I can get there in time.&quot;)
-		(goto: &quot;leavemissle&quot;)
+		(goto: &quot;leavemissile&quot;)
 	]
 
 	(else:)[
 		(set: $flair to &quot;Warn them? I mean, I&#39;ll go the village, I need to see if anything of value survives the blast.&quot;)
-		(goto: &quot;launchmissle&quot;)
+		(goto: &quot;launchmissile&quot;)
 	]
 ]
 
-(link: &quot;Hurry the missle launch&quot;)[
+(link: &quot;Hurry the missile launch&quot;)[
 	(set: $moral to $moral - 10)
 	(if: $moral &gt; 70)[
-		(set: $flair to &quot;What? How could I even consider that. BEtter get cracking to disable this thing.&quot;)
+		(set: $flair to &quot;What? How could I even consider that. Better get cracking to disable this thing.&quot;)
 		(goto: &quot;disablemissle&quot;)
 	]
 
 	(elseif: $moral &gt; 30)[
 		(set: $flair to &quot;I.. I&#39;m ashamed that even occured to me as an option.&quot;)
-		(goto: &quot;leavemissle&quot;)
+		(goto: &quot;leavemissile&quot;)
 	]
 
 	(else:)[
 		(set: $flair to &quot;Better get this thing launched faster, dawn is coming and at this rate, the settlement won&#39;t have that many people in it when this things lands.&quot;)
-		(goto: &quot;launchmissle&quot;)
+		(goto: &quot;launchmissile&quot;)
 	]
 
 ]</tw-passagedata>
@@ -1620,19 +1620,19 @@ You take this as your cue to leave, stock up on fuel and water, and get back to 
 (else:)[Something went wrong. Pos is $pos]
 
 }</tw-passagedata>
-<tw-passagedata pid="54" name="disablemissle" tags="" position="533,1870">$flair
+<tw-passagedata pid="54" name="disablemissile" tags="" position="533,1870">$flair
 
-A few minutes of pressing buttons on the terminal yeilds the message: LAUNCH ABORTED. You simle to yourself, a job well done.
-
-[[Play again?-&gt;Start]]</tw-passagedata>
-<tw-passagedata pid="55" name="launchmissle" tags="" position="833,1869">$flair
-
-You click around for a while. Finally you come across a screen which shows two buttons. &quot;Immediate Launch&quot; and &quot;Abort Launch&quot;. You chuckle to yourself and confrim your choice. As you walk slowly back through the tunnel you can hear the sound of metal scraping on metal and a rocket coming to life.
+A few minutes of pressing buttons on the terminal yeilds the message: LAUNCH ABORTED. You smile to yourself, a job well done.
 
 [[Play again?-&gt;Start]]</tw-passagedata>
-<tw-passagedata pid="56" name="leavemissle" tags="" position="679,1866">$flair
+<tw-passagedata pid="55" name="launchmissile" tags="" position="833,1869">$flair
 
-You set out as fast as you can. After over two hours you realize you aren&#39;t going to make it. Sure enough, a few minuets later you see the night sky light up as a missle flies over your head. Not long after the horizion is set aflame before your eyes. You think you can almost hear the screams.
+You click around for a while. Finally you come across a screen which shows two buttons. &quot;Immediate Launch&quot; and &quot;Abort Launch&quot;. You chuckle to yourself and confirm your choice. As you walk slowly back through the tunnel you can hear the sound of metal scraping on metal and a rocket coming to life.
+
+[[Play again?-&gt;Start]]</tw-passagedata>
+<tw-passagedata pid="56" name="leavemissile" tags="" position="679,1866">$flair
+
+You set out as fast as you can. After over two hours you realize you aren&#39;t going to make it. Sure enough, a few minutes later you see the night sky light up as a missle flies over your head. Not long after the horizion is set aflame before your eyes. You think you can almost hear the screams.
 
 [[Play again?-&gt;Start]]</tw-passagedata>
 </tw-storydata>

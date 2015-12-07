@@ -6,6 +6,7 @@ Changelog - 12/6/15 - Kevin
 	Moved the [[Play again?]] links to the choice6 aftermaths
 	Re-deleted ariddesert passage
 	Fixed broken links that were caused because the passage "shootalldriving" was named "shootalldriver"
+	Fixed a bunch of typos in Choice6 & its results
 
 Changelog - 12/6/15 - Dustin
 	Laughed at some of my dumb mistakes that Kevin pointed out
