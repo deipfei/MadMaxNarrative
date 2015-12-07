@@ -7,6 +7,9 @@ Changelog - 12/6/15 - Kevin
 	Re-deleted ariddesert passage
 	Fixed broken links that were caused because the passage "shootalldriving" was named "shootalldriver"
 	Fixed a bunch of typos in Choice6 & its results
+	Fixed some more typos
+	Removed the period from the first link for consistency
+	Changed the CSS of the story. Unfortunately, this will have to be reapplied every time
 
 Changelog - 12/6/15 - Dustin
 	Laughed at some of my dumb mistakes that Kevin pointed out
