@@ -10,6 +10,7 @@ Changelog - 12/6/15 - Kevin
 	Fixed some more typos
 	Removed the period from the first link for consistency
 	Changed the CSS of the story. Unfortunately, this will have to be reapplied every time
+	Changed background and link colors
 
 Changelog - 12/6/15 - Dustin
 	Laughed at some of my dumb mistakes that Kevin pointed out
